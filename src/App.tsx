@@ -12,22 +12,22 @@ export default function Page() {
 
   const getNoButtonText = () => {
     const phrases = [
-      "No",
-      "Are you sure?",
-      "Really sure?",
-      "Think again!",
-      "Last chance!",
-      "Surely not?",
-      "You might regret this!",
-      "Give it another thought!",
-      "Are you absolutely certain?",
-      "This could be a mistake!",
-      "Have a heart!",
-      "Don't be so cold!",
-      "Change of heart?",
-      "Wouldn't you reconsider?",
-      "Is that your final answer?",
-      "You're breaking my heart ;(",
+      "Nie",
+      "Na pewno?",
+      "Na pewno pewno?",
+      "Przemyśl to!",
+      "Ostatnia szansa!",
+      "Zdecydowanie nie??",
+      "Będziesz żałować!",
+      "Zastanów się!",
+      "Jesteś absolutnie pewna?",
+      "To może być błąd!",
+      "Miej serce!",
+      "Nie bądź cham!",
+      "Może jednak?",
+      "Zmienisz zdanie?",
+      "To twoja ostateczna odpowiedź ziemniaczku?",
+      "Łamiesz mi serduszko :c",
     ];
 
     return phrases[Math.min(noCount, phrases.length - 1)];
@@ -39,7 +39,7 @@ export default function Page() {
         {yesPressed ? (
           <>
             <img src="https://media.tenor.com/gUiu1zyxfzYAAAAi/bear-kiss-bear-kisses.gif" />
-            <div className="text-container">Ok yay!!!</div>
+            <div className="text-container">Supcio widzimy sie o 11 :3</div>
           </>
         ) : (
           <>
@@ -48,14 +48,14 @@ export default function Page() {
               style={{ width: "400x", height: "240px" }}
               src="https://gifdb.com/images/high/cute-love-bear-roses-ou7zho5oosxnpo6k.gif"
             />
-            <h1 className="text-container">Will you be my Valentine?</h1>
+            <h1 className="text-container">Bedziesz moja Gabi-walentynka?</h1>
             <div>
               <button
                 className={"yes-button"}
                 style={{ fontSize: yesButtonSize }}
                 onClick={() => setYesPressed(true)}
               >
-                Yes
+                Tak!
               </button>
 
               <button onClick={handleNoClick} className="no-button">
